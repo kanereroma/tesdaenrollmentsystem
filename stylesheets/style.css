@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: 1em;
+}
+.logo > img{
+    width: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    box-shadow: 1px 2px 2px black;
+}
+img{
+    width: 60px;
+}
+nav > a:hover{
+    color: blue;
+}
+.navbar-ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    display: inline;
+    margin: 0 1em;
+    padding: 3vh;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgb(165, 162, 162);
+    animation-name: hover;
+    animation-duration: 1s;
+    border-radius: 10px;
+    transform: scale(120%);
+}
+.location{
+    display: none;
+}
+
+@keyframes hover{
+    0%{
+        opacity: 0%;
+
+    }
+    100%{
+        opacity: 100%;
+    }
+}
